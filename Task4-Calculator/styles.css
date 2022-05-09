@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
+
+.container{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+}
+
+table{
+    margin: auto;
+    border-spacing: 11px;
+    padding: 5px;
+}
+
+input[type="text"]{
+    border-radius: 8px;
+    font-size: 30px;
+    background-color:  #fdfbfb ;
+    border: solid black;
+    width: 100%;
+    height: 55px;
+    box-shadow: 3px 3px 3px #be9b7b ;
+}
+
+input[type="button"]{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    font-size: 30px;
+    background-color: #f4e7e7 ;
+    color: black;
+    border: solid black 2px;
+    width: 100%;
+    height: 55px;
+    box-shadow: 3px 3px #be9b7b ;
+}
+
+.calculator{
+    border: 4px solid black;
+    background-color:  #dec3c3;
+    border-radius: 38px;
+    box-shadow: 11px 11px 11px #CDC7BE;
+    display: inline-block;
+}
+
+#btn:hover {
+    background-color:  #eedbdb ;
+}
+
+#go {
+    background-color: #c99789;
+}
+
+#go:hover {
+    background-color: #e0a899;
+}
+
