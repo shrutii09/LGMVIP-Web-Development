@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #A267AC, #1572A1);
+}
+
+.container{
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 25px 55px;
+    border-radius: 10px ;
+}
+
+.container .title{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #1572A1, #A267AC);
+
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0 ;
+}
+
+form .user-details .input-box{
+    margin-bottom: 25px;
+    width: calc(100%/ 2-20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #1572A1;
+}
+
+form .gender-details .gender-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details{
+    align-items: center;
+}
+
+
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+}
+
+.skills-section .skills-title{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills-section{
+    justify-content: space-between;
+    align-items: center;
+
+}
+form .button{
+    height: 45px;
+    margin: 45px;
+
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: linear-gradient(135deg, #1572A1, #A267AC);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+.rightDiv{
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 19px;
+  }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form</title>
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Bootstrap Icons Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container">
+      <div class="title">Registration <span><i class="fas fa-user"></i></span></div>
+      <form id="from1"; action="#">
+          <div class="user-details">
+              <div class="input-box">
+                  <span class="details">Full Name </span>
+                  <input type="text" placeholder="Enter your full name" id="fullName" name = "inputValues" required>
+              </div>
+                <div class="input-box">
+                    <span class="details">Email </span>
+                    <input type="email" placeholder="Enter your email" id="Email" name = "inputValues" required>
+                </div>
+                <!-- <div class="input-box">
+                    <span class="details">Phone Number </span>
+                    <input type="number" placeholder="Enter your number" id="phoneNo" name = "inputValues" required>
+                </div> -->
+                <div class="input-box">
+                    <span class="details">Image link </span>
+                    <input type="file" accept="image/gif, image/jpeg, image/png" placeholder="Paste your image link" required onchange="loadFile(event)">
+                </div>
+                <!-- <div class="input-box">
+                    <span class="details">Password </span>
+                    <input type="text" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password </span>
+                    <input type="text" placeholder="Confirm your Password" required>
+                </div> -->
+          </div>
+          <!-- <div class="gender-details">
+              <span class="gender-title">Gender:</span>
+              <div class="category">
+                  <label for="">
+                      <span class="dot one"></span>
+                      <span class="gender">Male</span>
+                  </label>
+                  <label for="">
+                    <span class="dot one"></span>
+                    <span class="gender">Female</span>
+                </label>
+                <label for="">
+                    <span class="dot one"></span>
+                    <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+          </div> -->
+
+          <div class="gender-details" id="gender"><span class="gender-title">Gender </span> 
+            <input type='radio' name='sex' onclick="myFunction(this.value)" value='Male'>Male
+            <input type='radio' name='sex' onclick="myFunction(this.value)" value='Female'>Female
+            <input type='radio' name='sex' onclick="myFunction(this.value)" value='Prefered not to say'>Prefer not to say
+          </div><br/>
+          <div class="skills-section"><span class="skills-title">Skills </span>
+            <input type="checkbox" id='check1' class="pl"> HTML
+            <input type="checkbox" id='check2' class="pl"> CSS
+            <input type="checkbox" id='check3' class="pl"> JavaScript
+        </div>
+        <!-- <div class="skills-section"><span class="skills-title">Skills </span>
+            <input type="checkbox" onclick="checkCheckbox()" id='check1'> HTML
+            <input type="checkbox" onclick="checkCheckbox()" id='check1'> CSS
+            <input type="checkbox" onclick="checkCheckbox()" id='check1'> JavaScript
+        </div> -->
+          <div class="button">
+              <!-- <input type="submit" value="Register" onclick="testVariable()"> -->
+              <input type="submit" value="Register" onclick="testVariable()">
+          </div>
+
+      </form>
+
+  </div>
+
+  <div class="rightDiv">
+      <div class="container">
+        <div class="title">Enrolled Students <i class="bi bi-patch-check-fill"></i></div>
+        <br>
+        <table border="1" id="show" class="center">
+            <tr>
+                <th style="background: linear-gradient(135deg, #1572A1, #A267AC); color: #fff;">Description</th>
+                <th style="background: linear-gradient(135deg, #1572A1, #A267AC); color: #fff;">Image</th>
+            </tr>
+            <tr> 
+                <td>Name <br> Email <br> Phone No</td>
+                <td><img src="profile.jpg" alt="" border=1 height=120 width=200></img></td>
+            </tr>
+            <tr>
+            <td><p id="spanResult"></p></td>
+            <!-- <td><p id="result"></p></td> -->
+            <td><p><img id="output" width="200" /></p></td>
+            <!-- <td><p id="result"></p></td> -->
+            </tr>
+        
+
+            <!-- <tr>
+                <td>Name <br> Email <br> Phone No</td>
+                <td><img src="profile.jpg" alt="" border=1 height=120 width=200></img></td>
+            </tr> -->
+            
+            </tr>
+        </table>
+    
+    </div>
+  </div>
+
+<!--JavaScript File-->
+<script src="script.js"></script>
+
+</body>
+</html>
